@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "astral_horizons:block/steal_block"
+    }
+  }
+}
