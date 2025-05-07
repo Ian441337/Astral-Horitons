@@ -64,7 +64,10 @@ public class astral_horizons {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.TEST);
+            event.accept(ModItems.EMPTYCAN);
+            event.accept(ModItems.CANNEDMELON);
+            event.accept(ModItems.CANNEDCARROT);
+            event.accept(ModItems.CANNEDSTEAK);
         }
     }
 
