@@ -17,6 +17,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
 import ovh.gliitchlabs.blocks.ModBlocks;
+import ovh.gliitchlabs.items.ModCreativeModTabs;
 import ovh.gliitchlabs.items.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -36,6 +37,7 @@ public class astral_horizons {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -48,15 +50,8 @@ public class astral_horizons {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.EMPTY_CAN);
-            event.accept(ModItems.CANNED_MELON);
-            event.accept(ModItems.CANNED_CARROT);
-            event.accept(ModItems.CANNED_STEAK);
-        }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.STEAL_INGOT);
-            event.accept(ModBlocks.STEAL_BLOCK);
         }
     }
 

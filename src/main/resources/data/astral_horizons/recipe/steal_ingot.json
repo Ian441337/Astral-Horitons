@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "astral_horizons:steal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "astral_horizons:steal_ingot"
+  }
+}

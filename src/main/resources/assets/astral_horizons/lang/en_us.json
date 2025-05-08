@@ -5,5 +5,7 @@
   "item.astral_horizons.canned_carrot": "Canned Carrot",
   "item.astral_horizons.canned_steak": "Canned Steak",
 
-  "block.astral_horizons.steal_block": "Block of Steal"
+  "block.astral_horizons.steal_block": "Block of Steal",
+
+  "creativetab.astral_horizons.tab": "Astral Horizons"
 }

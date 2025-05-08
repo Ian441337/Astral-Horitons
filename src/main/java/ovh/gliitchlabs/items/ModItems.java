@@ -17,6 +17,8 @@ public class ModItems {
     public static final DeferredItem<Item> EMPTY_CAN = ITEMS.register("empty_can",
             () -> new Item(new Item.Properties()));
 
+
+//Food
     public static final DeferredItem<Item> CANNED_MELON = ITEMS.register("canned_melon",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).usingConvertsTo(ModItems.EMPTY_CAN).build())));
 
@@ -25,6 +27,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> CANNED_STEAK = ITEMS.register("canned_steak",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).usingConvertsTo(ModItems.EMPTY_CAN).build())));
+//
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
