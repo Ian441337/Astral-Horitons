@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "astral_horizons:steal_ingot"
+      "item": "astral_horizons:steel_ingot"
     }
   },
   "pattern": [
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "astral_horizons:steal_block"
+    "id": "astral_horizons:steel_block"
   }
 }

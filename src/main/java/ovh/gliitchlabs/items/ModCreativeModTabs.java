@@ -23,8 +23,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CANNED_MELON);
                         output.accept(ModItems.CANNED_CARROT);
                         output.accept(ModItems.CANNED_STEAK);
-                        output.accept(ModItems.STEAL_INGOT);
-                        output.accept(ModBlocks.STEAL_BLOCK);
+                        output.accept(ModItems.STEEL_INGOT);
+                        output.accept(ModBlocks.STEEL_BLOCK);
+                        output.accept(ModItems.STEEL_CHISEL);
                     }).build());
 
 

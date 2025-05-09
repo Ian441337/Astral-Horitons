@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "astral_horizons:steal_block"
+          "name": "astral_horizons:steel_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "astral_horizons:blocks/steal_block"
+  "random_sequence": "astral_horizons:blocks/steel_block"
 }

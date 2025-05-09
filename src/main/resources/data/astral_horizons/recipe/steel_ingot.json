@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "astral_horizons:steal_block"
+      "item": "astral_horizons:steel_block"
     }
   ],
   "result": {
     "count": 9,
-    "id": "astral_horizons:steal_ingot"
+    "id": "astral_horizons:steel_ingot"
   }
 }

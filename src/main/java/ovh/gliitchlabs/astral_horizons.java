@@ -18,6 +18,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
 import ovh.gliitchlabs.blocks.ModBlocks;
 import ovh.gliitchlabs.items.ModCreativeModTabs;
+import ovh.gliitchlabs.items.ModFoodProperties;
 import ovh.gliitchlabs.items.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -51,7 +52,7 @@ public class astral_horizons {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.STEAL_INGOT);
+            event.accept(ModItems.STEEL_INGOT);
         }
     }
 

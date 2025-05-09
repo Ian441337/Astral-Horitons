@@ -1,11 +1,12 @@
 {
-  "item.astral_horizons.steal_ingot": "Steal Ingot",
+  "item.astral_horizons.steel_ingot": "Steel Ingot",
   "item.astral_horizons.empty_can": "Empty can",
   "item.astral_horizons.canned_melon": "Canned Melon",
   "item.astral_horizons.canned_carrot": "Canned Carrot",
   "item.astral_horizons.canned_steak": "Canned Steak",
+  "item.astral_horizons.steel_chisel": "Steel Chisel",
 
-  "block.astral_horizons.steal_block": "Block of Steal",
+  "block.astral_horizons.steel_block": "Block of Steel",
 
   "creativetab.astral_horizons.tab": "Astral Horizons"
 }

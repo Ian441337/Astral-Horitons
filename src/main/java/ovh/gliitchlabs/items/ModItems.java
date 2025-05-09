@@ -6,27 +6,34 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import ovh.gliitchlabs.astral_horizons;
+import ovh.gliitchlabs.items.custom.ChiselItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(astral_horizons.MODID);
 
-    public static final DeferredItem<Item> STEAL_INGOT = ITEMS.register("steal_ingot",
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
 
 
     public static final DeferredItem<Item> EMPTY_CAN = ITEMS.register("empty_can",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> STEEL_CHISEL = ITEMS.register("steel_chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
+
+
 
 //Food
+
     public static final DeferredItem<Item> CANNED_MELON = ITEMS.register("canned_melon",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).usingConvertsTo(ModItems.EMPTY_CAN).build())));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CANNED_MELON)));
 
     public static final DeferredItem<Item> CANNED_CARROT = ITEMS.register("canned_carrot",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).usingConvertsTo(ModItems.EMPTY_CAN).build())));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CANNED_CARROT)));
 
     public static final DeferredItem<Item> CANNED_STEAK = ITEMS.register("canned_steak",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(8).usingConvertsTo(ModItems.EMPTY_CAN).build())));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CANNED_STEAK)));
+
 //
 
     public static void register(IEventBus eventBus) {

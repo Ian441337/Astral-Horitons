@@ -19,7 +19,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(astral_horizons.MODID);
 
-    public static final DeferredBlock<Block> STEAL_BLOCK = registerBlock("steal_block",
+    public static final DeferredBlock<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.METAL)
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE)

@@ -1,0 +1,20 @@
+{
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "astral_horizons:steel_ingot"
+    },
+    "+": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "+"
+  ],
+  "result": {
+    "count": 1,
+    "id": "astral_horizons:steel_chisel"
+  },
+  "type": "minecraft:crafting_shaped"
+}
