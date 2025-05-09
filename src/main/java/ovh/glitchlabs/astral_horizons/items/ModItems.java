@@ -1,12 +1,11 @@
-package ovh.gliitchlabs.items;
+package ovh.glitchlabs.astral_horizons.items;
 
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import ovh.gliitchlabs.astral_horizons;
-import ovh.gliitchlabs.items.custom.ChiselItem;
+import ovh.glitchlabs.astral_horizons.astral_horizons;
+import ovh.glitchlabs.astral_horizons.items.custom.ChiselItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(astral_horizons.MODID);

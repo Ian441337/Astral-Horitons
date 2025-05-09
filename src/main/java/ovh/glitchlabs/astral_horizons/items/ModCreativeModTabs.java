@@ -1,4 +1,4 @@
-package ovh.gliitchlabs.items;
+package ovh.glitchlabs.astral_horizons.items;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -6,8 +6,8 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import ovh.gliitchlabs.astral_horizons;
-import ovh.gliitchlabs.blocks.ModBlocks;
+import ovh.glitchlabs.astral_horizons.astral_horizons;
+import ovh.glitchlabs.astral_horizons.blocks.ModBlocks;
 
 import java.util.function.Supplier;
 

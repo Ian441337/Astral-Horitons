@@ -1,4 +1,4 @@
-package ovh.gliitchlabs.blocks;
+package ovh.glitchlabs.astral_horizons.blocks;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -10,8 +10,8 @@ import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import ovh.gliitchlabs.astral_horizons;
-import ovh.gliitchlabs.items.ModItems;
+import ovh.glitchlabs.astral_horizons.astral_horizons;
+import ovh.glitchlabs.astral_horizons.items.ModItems;
 
 import java.util.function.Supplier;
 

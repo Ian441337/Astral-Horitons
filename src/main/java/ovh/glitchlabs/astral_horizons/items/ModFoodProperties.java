@@ -1,4 +1,4 @@
-package ovh.gliitchlabs.items;
+package ovh.glitchlabs.astral_horizons.items;
 
 import net.minecraft.world.food.FoodProperties;
 

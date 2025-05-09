@@ -1,4 +1,4 @@
-package ovh.gliitchlabs.items.custom;
+package ovh.glitchlabs.astral_horizons.items.custom;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;

@@ -1,4 +1,4 @@
-package ovh.gliitchlabs;
+package ovh.glitchlabs.astral_horizons;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -16,10 +16,9 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
-import ovh.gliitchlabs.blocks.ModBlocks;
-import ovh.gliitchlabs.items.ModCreativeModTabs;
-import ovh.gliitchlabs.items.ModFoodProperties;
-import ovh.gliitchlabs.items.ModItems;
+import ovh.glitchlabs.astral_horizons.blocks.ModBlocks;
+import ovh.glitchlabs.astral_horizons.items.ModCreativeModTabs;
+import ovh.glitchlabs.astral_horizons.items.ModItems;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(astral_horizons.MODID)
