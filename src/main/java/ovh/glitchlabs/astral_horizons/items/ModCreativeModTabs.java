@@ -26,6 +26,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.STEEL_INGOT);
                         output.accept(ModBlocks.STEEL_BLOCK);
                         output.accept(ModItems.STEEL_CHISEL);
+                        output.accept(ModBlocks.TIN_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_TIN_ORE);
+                        output.accept(ModItems.TIN_INGOT);
                     }).build());
 
 

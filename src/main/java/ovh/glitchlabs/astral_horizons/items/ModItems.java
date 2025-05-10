@@ -12,6 +12,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
+            () -> new Item(new Item.Properties()));
 
 
     public static final DeferredItem<Item> EMPTY_CAN = ITEMS.register("empty_can",
