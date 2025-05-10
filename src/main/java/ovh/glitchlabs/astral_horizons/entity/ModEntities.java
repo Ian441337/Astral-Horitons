@@ -15,6 +15,7 @@ public class ModEntities {
 
     public static final Supplier<EntityType<RocketEntity>> ROCKET =
             ENTITY_TYPES.register("rocket", () -> EntityType.Builder.of(RocketEntity::new, MobCategory.MISC)
+                    .passengerAttachments(1.44375F)
                     .sized(1.0f, 2.0f)
                     .clientTrackingRange(10)
                     .updateInterval(1)

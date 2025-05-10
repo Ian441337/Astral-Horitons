@@ -62,6 +62,15 @@ public class RocketEntity extends Entity {
         return InteractionResult.SUCCESS;
     }
 
+    @Override
+    public boolean isPushable() {
+        return true;
+    }
+
+    @Override
+    public boolean isPickable() {
+        return true;
+    }
 
 
     @Override
@@ -73,6 +82,7 @@ public class RocketEntity extends Entity {
         return super.hurt(source, amount);
     }
 
+
     @Override
     public boolean canBeCollidedWith() {
         return true;
@@ -80,7 +90,7 @@ public class RocketEntity extends Entity {
 
     @Override
     protected void positionRider(Entity passenger, MoveFunction callback) {
-        Vec3 pos = this.position().add(0, 1.5, 0);
+        Vec3 pos = this.position().add(0, 0.5, 0);
         callback.accept(passenger, pos.x, pos.y, pos.z);
     }
 
