@@ -17,6 +17,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
 import ovh.glitchlabs.astral_horizons.blocks.ModBlocks;
+import ovh.glitchlabs.astral_horizons.entity.ModEntities;
 import ovh.glitchlabs.astral_horizons.items.ModCreativeModTabs;
 import ovh.glitchlabs.astral_horizons.items.ModItems;
 
@@ -38,6 +39,7 @@ public class astral_horizons {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -47,6 +49,7 @@ public class astral_horizons {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
