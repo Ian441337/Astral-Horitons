@@ -7,10 +7,14 @@
   "item.astral_horizons.steel_chisel": "Steel Chisel",
   "item.astral_horizons.tin_ingot": "Tin Ingot",
   "item.astral_horizons.electromagnet": "Electromagnet",
+  "item.astral_horizons.titanium_ingot": "Titanium Ingot",
+  "item.astral_horizons.raw_titanium": "Raw Titanium",
 
   "block.astral_horizons.steel_block": "Block of Steel",
   "block.astral_horizons.tin_ore": "Tin Ore",
   "block.astral_horizons.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.astral_horizons.titanium_ore": "Titanium Ore",
+  "block.astral_horizons.deepslate_titanium_ore": "Deepslate Titanium Ore",
 
   "entity.astral_horizons.rocket": "rocket",
 

@@ -1,3 +1,4 @@
-// 1.21.1	2025-05-10T11:45:21.29763238	Tags for minecraft:block mod id astral_horizons
-d585d24741a06c2bb00f4eae80f01e2c8999e389 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2025-05-11T14:43:15.774604468	Tags for minecraft:block mod id astral_horizons
+d6bf1085e9b32543a6ed529325bef6dc71dbb61e data/minecraft/tags/block/mineable/pickaxe.json
+78fd7e9fdfbf1f5e0e0eb9102b3cd7531dc458ea data/minecraft/tags/block/needs_diamond_tool.json
 d585d24741a06c2bb00f4eae80f01e2c8999e389 data/minecraft/tags/block/needs_iron_tool.json

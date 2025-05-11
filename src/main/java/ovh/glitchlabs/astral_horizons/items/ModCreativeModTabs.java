@@ -28,7 +28,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.STEEL_CHISEL);
                         output.accept(ModBlocks.TIN_ORE);
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE);
+                        output.accept(ModBlocks.TITANIUM_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE);
                         output.accept(ModItems.TIN_INGOT);
+                        output.accept(ModItems.TITANIUM_INGOT);
+                        output.accept(ModItems.RAW_TITANIUM);
                         output.accept(ModItems.ELECTROMAGNET);
                     }).build());
 

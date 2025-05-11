@@ -46,6 +46,23 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> TITANIUM_ORE = registerBlock("titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.STONE)
+                    .instrument(NoteBlockInstrument.BASEDRUM)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5F, 3.5F)
+            )
+    );
+
+    public static final DeferredBlock<Block> DEEPSLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.ofLegacyCopy(ModBlocks.TITANIUM_ORE.get())
+                    .mapColor(MapColor.DEEPSLATE)
+                    .strength(5.0F, 3.5F)
+                    .sound(SoundType.DEEPSLATE)
+            )
+    );
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

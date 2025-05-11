@@ -19,6 +19,8 @@ public class ModBlockStateProvidor extends BlockStateProvider {
 
         BlockWithItem(ModBlocks.TIN_ORE);
         BlockWithItem(ModBlocks.DEEPSLATE_TIN_ORE);
+        BlockWithItem(ModBlocks.TITANIUM_ORE);
+        BlockWithItem(ModBlocks.DEEPSLATE_TITANIUM_ORE);
     }
 
     private void BlockWithItem(DeferredBlock<?> deferredBlock) {

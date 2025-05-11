@@ -1,4 +1,6 @@
-// 1.21.1	2025-05-10T10:54:55.389867955	Loot Tables
+// 1.21.1	2025-05-11T14:43:15.775507866	Loot Tables
 044c05064ec1d505396a488702f5d72d4fe2d138 data/astral_horizons/loot_table/blocks/deepslate_tin_ore.json
+3562fb0872ffa25502a65c06dea996ea93ea82a0 data/astral_horizons/loot_table/blocks/deepslate_titanium_ore.json
 1f5c77346ae89732ec082f4c7dcb4411b0f38645 data/astral_horizons/loot_table/blocks/steel_block.json
 59c904ad6b4a0f31e92149c621d1db3a48e207a7 data/astral_horizons/loot_table/blocks/tin_ore.json
+768b99978ee007e2c4f44c8bfdb4040b67aa4001 data/astral_horizons/loot_table/blocks/titanium_ore.json

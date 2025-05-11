@@ -32,6 +32,10 @@ public class ModBlockLootTableProvidor extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.TIN_ORE.get(), ModItems.TIN_INGOT.get()));
         add(ModBlocks.DEEPSLATE_TIN_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_TIN_ORE.get(), ModItems.TIN_INGOT.get(), 2, 5));
+        add(ModBlocks.TITANIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
+        add(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_TITANIUM_ORE.get(), ModItems.RAW_TITANIUM.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

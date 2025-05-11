@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "astral_horizons:block/deepslate_titanium_ore"
+  }
+}
