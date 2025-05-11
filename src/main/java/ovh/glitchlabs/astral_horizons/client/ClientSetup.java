@@ -4,7 +4,6 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import ovh.glitchlabs.astral_horizons.astral_horizons;
 import ovh.glitchlabs.astral_horizons.client.renderer.RocketRenderer;
