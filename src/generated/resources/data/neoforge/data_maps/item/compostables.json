@@ -1,0 +1,10 @@
+{
+  "values": {
+    "astral_horizons:canned_carrot": {
+      "chance": 0.45
+    },
+    "astral_horizons:canned_melon": {
+      "chance": 0.25
+    }
+  }
+}

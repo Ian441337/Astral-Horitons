@@ -1,0 +1,4 @@
+// 1.21.1	2025-05-11T10:50:43.782983159	Registries
+2e332e6045a2e30833ecd169b6f415479ad4047a data/astral_horizons/neoforge/biome_modifier/add_tin_ore.json
+4ae099882beb690c496c52c75527e660ccf4f08a data/astral_horizons/worldgen/configured_feature/tin_ore.json
+582d48096523742e113a566369e6c253db2232b8 data/astral_horizons/worldgen/placed_feature/tin_ore_placed.json
