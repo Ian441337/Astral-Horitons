@@ -30,13 +30,13 @@ public class RocketEntity extends Entity {
     private static final int TELEPORT_HEIGHT = 500;
     private static final double FUEL_CONSUMPTION_RATE = 0.01;
 
-    // Rocket state variables
-    private double fuel = 100.0; // Full tank of fuel
+
+    private double fuel = 100.0;
     private boolean engineStarted = false;
 
     public RocketEntity(EntityType<? extends RocketEntity> entityType, Level level) {
         super(entityType, level);
-        this.blocksBuilding = true; // Prevents blocks from being placed on the rocket
+        this.blocksBuilding = true;
     }
 
     @Override
@@ -149,7 +149,6 @@ public class RocketEntity extends Entity {
             return;
         }
 
-        // Finde eine geeignete Landestelle
         int randomX = random.nextInt(200) - 100;
         int randomZ = random.nextInt(200) - 100;
         double landingY = 100;
