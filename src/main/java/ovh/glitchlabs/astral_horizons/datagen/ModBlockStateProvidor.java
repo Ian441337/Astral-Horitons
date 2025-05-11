@@ -1,7 +1,6 @@
 package ovh.glitchlabs.astral_horizons.datagen;
 
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import ovh.glitchlabs.astral_horizons.astral_horizons;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;

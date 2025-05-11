@@ -47,7 +47,7 @@ public class RocketEntity extends Entity {
                 getPassengers().get(0).setPos(position());
             }
 
-            if (!level().isClientSide && getY() >= 300) {
+            if (!level().isClientSide && getY() >= 500) {
                 teleportTo(100, 100, 100);
             }
         }
@@ -89,7 +89,7 @@ public class RocketEntity extends Entity {
 
     @Override
     protected void positionRider(Entity passenger, MoveFunction callback) {
-        Vec3 pos = this.position().add(0, 0.2, 0);
+        Vec3 pos = this.position().add(0, 0.01, 0);
         callback.accept(passenger, pos.x, pos.y, pos.z);
     }
 

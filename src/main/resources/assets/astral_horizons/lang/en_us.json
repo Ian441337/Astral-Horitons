@@ -6,10 +6,13 @@
   "item.astral_horizons.canned_steak": "Canned Steak",
   "item.astral_horizons.steel_chisel": "Steel Chisel",
   "item.astral_horizons.tin_ingot": "Tin Ingot",
+  "item.astral_horizons.electromagnet": "Electromagnet",
 
   "block.astral_horizons.steel_block": "Block of Steel",
   "block.astral_horizons.tin_ore": "Tin Ore",
   "block.astral_horizons.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "entity.astral_horizons.rocket": "rocket",
 
   "creativetab.astral_horizons.tab": "Astral Horizons"
 }

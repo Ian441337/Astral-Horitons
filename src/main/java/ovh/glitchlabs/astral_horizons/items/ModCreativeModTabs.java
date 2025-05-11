@@ -29,6 +29,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.TIN_ORE);
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE);
                         output.accept(ModItems.TIN_INGOT);
+                        output.accept(ModItems.ELECTROMAGNET);
                     }).build());
 
 

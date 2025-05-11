@@ -19,6 +19,6 @@ public class ModItemProvidor extends ItemModelProvider {
         basicItem(ModItems.CANNED_MELON.get());
         basicItem(ModItems.CANNED_STEAK.get());
         basicItem(ModItems.EMPTY_CAN.get());
-        basicItem(ModItems.STEEL_CHISEL.get());
+        basicItem(ModItems.ELECTROMAGNET.get());
     }
 }
