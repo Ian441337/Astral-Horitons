@@ -55,7 +55,6 @@ public class RocketEntity extends Entity {
 
     @Override
     public InteractionResult interact(Player player, InteractionHand hand) {
-        System.out.println("RocketEntity: Player interacted!");
         if (!level().isClientSide) {
             player.startRiding(this);
         }
@@ -90,7 +89,7 @@ public class RocketEntity extends Entity {
 
     @Override
     protected void positionRider(Entity passenger, MoveFunction callback) {
-        Vec3 pos = this.position().add(0, 0.5, 0);
+        Vec3 pos = this.position().add(0, 0.2, 0);
         callback.accept(passenger, pos.x, pos.y, pos.z);
     }
 
