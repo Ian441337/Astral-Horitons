@@ -1,6 +1,5 @@
 package ovh.glitchlabs.astral_horizons.entity;
 
-import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -119,7 +118,6 @@ public class RocketEntity extends Entity {
                                 0.5F, 0.5F);
                     }
 
-                    // Check for dimension change threshold
                     if (getY() >= TELEPORT_HEIGHT) {
                         teleportToMoon();
                     }
@@ -152,21 +150,18 @@ public class RocketEntity extends Entity {
         }
 
         // Finde eine geeignete Landestelle
-        int randomX = random.nextInt(200) - 100; // -100 bis 100
-        int randomZ = random.nextInt(200) - 100; // -100 bis 100
-        double landingY = 100; // Starthöhe für die Landung
+        int randomX = random.nextInt(200) - 100;
+        int randomZ = random.nextInt(200) - 100;
+        double landingY = 100;
 
-        // Erst die neue Rakete erstellen
         RocketEntity newRocket = ModEntities.ROCKET.get().create(targetLevel);
         if (newRocket != null) {
-            // Rakete positionieren
             newRocket.moveTo(randomX, landingY, randomZ);
-            newRocket.fuel = this.fuel * 0.75; // Etwas Treibstoff während des Transfers verlieren
+            newRocket.fuel = this.fuel * 0.75;
 
-            // Rakete zur Welt hinzufügen
+
             targetLevel.addFreshEntity(newRocket);
 
-            // Spieler teleportieren und direkt in die neue Rakete setzen
             Entity passenger = getFirstPassenger();
             if (passenger instanceof ServerPlayer player) {
                 player.stopRiding();
@@ -179,7 +174,6 @@ public class RocketEntity extends Entity {
             }
         }
 
-        // Die ursprüngliche Rakete entfernen
         this.discard();
     }
 
