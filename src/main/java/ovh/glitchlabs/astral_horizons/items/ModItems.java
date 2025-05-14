@@ -20,6 +20,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ELECTROMAGNET = ITEMS.register("electromagnet",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> OXYGEN_FILTER = ITEMS.register("oxigen_filter",
+            () -> new Item(new Item.Properties()));
 
 
     public static final DeferredItem<Item> EMPTY_CAN = ITEMS.register("empty_can",

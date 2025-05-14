@@ -1,7 +1,7 @@
-// 1.21.1	2025-05-11T14:43:15.775753987	Registries
+// 1.21.1	2025-05-14T14:41:01.649165641	Registries
 2e332e6045a2e30833ecd169b6f415479ad4047a data/astral_horizons/neoforge/biome_modifier/add_tin_ore.json
 7d1f89752939626cb1840e3aea320365ad134817 data/astral_horizons/neoforge/biome_modifier/add_titanium_ore.json
 4ae099882beb690c496c52c75527e660ccf4f08a data/astral_horizons/worldgen/configured_feature/tin_ore.json
 4ae099882beb690c496c52c75527e660ccf4f08a data/astral_horizons/worldgen/configured_feature/titanium_ore.json
-c474e19128309cf6b5d397b819a510331d238687 data/astral_horizons/worldgen/placed_feature/tin_ore_placed.json
-3fca7149d053a35b50f110529ec32484fe913e5e data/astral_horizons/worldgen/placed_feature/titanium_ore_placed.json
+18816ee2731fb81c941ff40b7bca500dfb259bd4 data/astral_horizons/worldgen/placed_feature/tin_ore_placed.json
+23c759fff103a68393d62597cf91925c5b186d19 data/astral_horizons/worldgen/placed_feature/titanium_ore_placed.json

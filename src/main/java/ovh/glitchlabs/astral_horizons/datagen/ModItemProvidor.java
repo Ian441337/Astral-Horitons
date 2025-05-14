@@ -22,5 +22,6 @@ public class ModItemProvidor extends ItemModelProvider {
         basicItem(ModItems.ELECTROMAGNET.get());
         basicItem(ModItems.TITANIUM_INGOT.get());
         basicItem(ModItems.RAW_TITANIUM.get());
+        basicItem(ModItems.OXYGEN_FILTER.get());
     }
 }
