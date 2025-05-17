@@ -1,9 +1,10 @@
-// 1.21.1	2025-05-11T12:29:59.856089973	Item Models: astral_horizons
+// 1.21.1	2025-05-14T22:13:52.485265782	Item Models: astral_horizons
 0b5c32890855695d1bbaf5e2a38e499b2bd26289 assets/astral_horizons/models/item/canned_carrot.json
 a37aad84b44f91ad788ea94fb47a39135ae755ac assets/astral_horizons/models/item/canned_melon.json
 3a4afac1ff281c88a5f8f4c803209028b101363c assets/astral_horizons/models/item/canned_steak.json
 aa1acd4978dab4e2d4643e778916a80d1626809a assets/astral_horizons/models/item/electromagnet.json
 0c3c9df9caa8363de071fc495e205aad6b9625de assets/astral_horizons/models/item/empty_can.json
+1d22ffe55fbd71b93615e73397507a29e3b7e31f assets/astral_horizons/models/item/oxigen_filter.json
 d6b24b0baf5c377e1b74c8c1ce7914f6e9b88ec0 assets/astral_horizons/models/item/raw_titanium.json
 699d921250647c6d452742847d12ef698c5c9089 assets/astral_horizons/models/item/steel_ingot.json
 2eb173f58e9f78777a8133a7bbe6a8e5b13a2e70 assets/astral_horizons/models/item/tin_ingot.json

@@ -1,0 +1,12 @@
+{
+  "type": "astral_horizons:space_dimension_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "astral_horizons:space",
+      "lakes": false,
+      "features": false,
+      "layers": []
+    }
+  }
+}

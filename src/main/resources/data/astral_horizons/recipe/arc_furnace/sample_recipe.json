@@ -1,0 +1,13 @@
+{
+  "type": "astral_horizons:arc_furnace",
+  "ingredient1": {
+    "item": "minecraft:iron_ingot"
+  },
+  "ingredient2": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "item": "minecraft:netherite_scrap",
+    "count": 1
+  }
+}
