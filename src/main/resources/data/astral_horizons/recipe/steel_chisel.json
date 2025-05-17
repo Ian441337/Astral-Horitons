@@ -1,5 +1,6 @@
 {
   "category": "building",
+  "group": "steel",
   "key": {
     "#": {
       "item": "astral_horizons:steel_ingot"
