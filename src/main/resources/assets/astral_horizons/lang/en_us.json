@@ -19,5 +19,8 @@
 
   "entity.astral_horizons.rocket": "rocket",
 
+  "painting.tutorialmod.space.title": "Space",
+  "painting.tutorialmod.space.author": "Glitchlabs",
+
   "creativetab.astral_horizons.tab": "Astral Horizons"
 }

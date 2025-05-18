@@ -21,6 +21,7 @@ import ovh.glitchlabs.astral_horizons.entity.ModEntities;
 import ovh.glitchlabs.astral_horizons.items.ModCreativeModTabs;
 import ovh.glitchlabs.astral_horizons.items.ModItems;
 
+
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(astral_horizons.MODID)
 public class astral_horizons {
