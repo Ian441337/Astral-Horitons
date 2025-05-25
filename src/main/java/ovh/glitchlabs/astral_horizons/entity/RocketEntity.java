@@ -184,22 +184,27 @@ public class RocketEntity extends Entity {
             return;
         }
 
-        int randomX = random.nextInt(200) - 100;
-        int randomZ = random.nextInt(200) - 100;
-        double landingY = 100;
+        // Aktuelle Position und Bewegung speichern
+        Vec3 currentMotion = getDeltaMovement();
+        float currentYRot = getYRot();
+        float currentPitch = rocketPitch;
 
         RocketEntity newRocket = ModEntities.ROCKET.get().create(targetLevel);
         if (newRocket != null) {
-            newRocket.moveTo(randomX, landingY, randomZ);
+            // Position direkt über der Weltgrenze setzen
+            newRocket.moveTo(getX(), 100, getZ(), currentYRot, 0);
             newRocket.fuel = this.fuel * 0.75;
+            newRocket.rocketPitch = currentPitch;
+            newRocket.setDeltaMovement(currentMotion);
+            newRocket.entityData.set(LAUNCHED, true);
+            newRocket.engineStarted = true;
 
             targetLevel.addFreshEntity(newRocket);
 
             Entity passenger = getFirstPassenger();
             if (passenger instanceof ServerPlayer player) {
                 player.stopRiding();
-
-                player.teleportTo(targetLevel, randomX, landingY, randomZ, player.getYRot(), player.getXRot());
+                player.teleportTo(targetLevel, getX(), 100, getZ(), currentYRot, currentPitch);
 
                 serverLevel.getServer().tell(new net.minecraft.server.TickTask(1, () -> {
                     player.startRiding(newRocket);
