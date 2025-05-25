@@ -170,11 +170,15 @@ public class RocketEntity extends Entity {
     private void teleportToSpace() {
         if (!(level() instanceof ServerLevel serverLevel)) return;
 
-        String dimensionId = astral_horizons.MODID + ":space";
+        // Prüfen ob wir bereits im Space sind
+        String spaceId = astral_horizons.MODID + ":space";
+        if (level().dimension().location().toString().equals(spaceId)) {
+            return; // Nicht teleportieren wenn wir bereits im Space sind
+        }
 
         ServerLevel targetLevel = null;
         for (ServerLevel level : serverLevel.getServer().getAllLevels()) {
-            if (level.dimension().location().toString().equals(dimensionId)) {
+            if (level.dimension().location().toString().equals(spaceId)) {
                 targetLevel = level;
                 break;
             }
