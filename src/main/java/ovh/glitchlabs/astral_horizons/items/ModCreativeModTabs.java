@@ -35,6 +35,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RAW_TITANIUM);
                         output.accept(ModItems.ELECTROMAGNET);
                         output.accept(ModItems.OXYGEN_FILTER);
+                        output.accept(ModItems.BATTERY_TIER1);
                     }).build());
 
 

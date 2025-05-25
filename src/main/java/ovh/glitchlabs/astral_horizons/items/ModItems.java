@@ -1,7 +1,7 @@
 package ovh.glitchlabs.astral_horizons.items;
 
-import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -35,6 +35,8 @@ public class ModItems {
     public static final DeferredItem<Item> STEEL_CHISEL = ITEMS.register("steel_chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
 
+    public static final DeferredItem<Item> BATTERY_TIER1 = ITEMS.register("battery_tier1",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
 //Food
 
@@ -47,10 +49,7 @@ public class ModItems {
     public static final DeferredItem<Item> CANNED_STEAK = ITEMS.register("canned_steak",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CANNED_STEAK)));
 
-//
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
-
-}
+};

@@ -119,7 +119,7 @@ public class RocketEntity extends Entity {
                     }
 
                     if (getY() >= TELEPORT_HEIGHT) {
-                        teleportToMoon();
+                        teleportToSpace();
                     }
                 } else {
                     if (!getPassengers().isEmpty() && getPassengers().get(0) instanceof ServerPlayer player) {
@@ -132,10 +132,10 @@ public class RocketEntity extends Entity {
         }
     }
 
-    private void teleportToMoon() {
+    private void teleportToSpace() {
         if (!(level() instanceof ServerLevel serverLevel)) return;
 
-        String dimensionId = astral_horizons.MODID + ":moon";
+        String dimensionId = astral_horizons.MODID + ":space";
 
         ServerLevel targetLevel = null;
         for (ServerLevel level : serverLevel.getServer().getAllLevels()) {
