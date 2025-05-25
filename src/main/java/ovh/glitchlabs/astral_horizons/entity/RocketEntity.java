@@ -29,10 +29,13 @@ public class RocketEntity extends Entity {
     private static final double MAX_SPEED = 3.5;
     private static final int TELEPORT_HEIGHT = 500;
     private static final double FUEL_CONSUMPTION_RATE = 0.01;
-
+    private static final double HORIZONTAL_SPEED = 0.5;
+    private static final double ROTATION_SPEED = 3.0;
+    private static final double PITCH_SPEED = 3.0; // Neue Konstante für die Neigungsgeschwindigkeit
 
     private double fuel = 100.0;
     private boolean engineStarted = false;
+    private float rocketPitch = 0.0f; // Neue Variable für die Neigung
 
     public RocketEntity(EntityType<? extends RocketEntity> entityType, Level level) {
         super(entityType, level);
@@ -100,12 +103,10 @@ public class RocketEntity extends Entity {
             }
 
             if (isLaunched()) {
-                double progress = Math.min(getLaunchTicks() / 200.0, 1.0);
-                double speed = MAX_SPEED * progress;
+                handleRocketControl();
 
                 if (fuel > 0) {
                     fuel -= FUEL_CONSUMPTION_RATE;
-                    setDeltaMovement(0, speed, 0);
                     move(MoverType.SELF, getDeltaMovement());
 
                     for (Entity passenger : getPassengers()) {
@@ -128,6 +129,40 @@ public class RocketEntity extends Entity {
                     setDeltaMovement(getDeltaMovement().multiply(0.9, 0.9, 0.9));
                     move(MoverType.SELF, getDeltaMovement());
                 }
+            }
+        }
+    }
+
+    private void handleRocketControl() {
+        Entity controller = getFirstPassenger();
+        if (controller instanceof Player player) {
+            // Vorwärts/Rückwärts Neigung
+            if (player.zza > 0) { // W-Taste - Nach vorne neigen
+                rocketPitch = Math.max(rocketPitch - (float) PITCH_SPEED, -45.0f);
+            }
+            if (player.zza < 0) { // S-Taste - Nach hinten neigen
+                rocketPitch = Math.min(rocketPitch + (float) PITCH_SPEED, 45.0f);
+            }
+
+            // Bewegung basierend auf der Neigung
+            Vec3 direction = Vec3.directionFromRotation(rocketPitch, getYRot());
+            setDeltaMovement(getDeltaMovement().add(
+                    direction.multiply(HORIZONTAL_SPEED, HORIZONTAL_SPEED, HORIZONTAL_SPEED)
+            ));
+
+            // Links/Rechts Bewegung und Rotation
+            if (player.xxa < 0) { // A-Taste
+                setYRot(getYRot() + (float) ROTATION_SPEED);
+            }
+            if (player.xxa > 0) { // D-Taste
+                setYRot(getYRot() - (float) ROTATION_SPEED);
+            }
+
+            // Geschwindigkeit begrenzen
+            Vec3 motion = getDeltaMovement();
+            double speedLimit = MAX_SPEED;
+            if (motion.length() > speedLimit) {
+                setDeltaMovement(motion.normalize().multiply(speedLimit, speedLimit, speedLimit));
             }
         }
     }
@@ -157,7 +192,6 @@ public class RocketEntity extends Entity {
         if (newRocket != null) {
             newRocket.moveTo(randomX, landingY, randomZ);
             newRocket.fuel = this.fuel * 0.75;
-
 
             targetLevel.addFreshEntity(newRocket);
 
@@ -227,8 +261,14 @@ public class RocketEntity extends Entity {
 
     @Override
     protected void positionRider(Entity passenger, MoveFunction callback) {
-        Vec3 pos = this.position().add(0, 0.5, 0);
-        callback.accept(passenger, pos.x, pos.y, pos.z);
+        if (this.hasPassenger(passenger)) {
+            double offsetY = 0.5;
+            Vec3 offset = new Vec3(0, offsetY, 0)
+                    .xRot((float) Math.toRadians(-rocketPitch)); // Neigung auf den Offset anwenden
+
+            Vec3 pos = this.position().add(offset);
+            callback.accept(passenger, pos.x, pos.y, pos.z);
+        }
     }
 
     @Override
